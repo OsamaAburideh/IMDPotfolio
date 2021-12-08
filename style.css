@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    font-family:  'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*home*/
+.home-section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+    /*background-image: url(images/home.jpg);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+	width: 100%;
+    
+}
+
+/*.avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}*/
+.avatar img {
+    width: 33%; height: auto;
+    min-width: 150px;
+    float: left;
+    margin-right:2rem; 
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+}
+.title{
+	text-align: center;
+	font-size: 28px;
+}
+.home .content{
+    transition: all 0.3s ease;
+
+}
+.content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+ .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+    
+}
+
+.content-section .links{
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+
+
+.content-section .links li{
+	display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+.content-section .links li a{
+	color:#000000 ;
+}
+.content-section .links li a:hover{
+	color: rgb(255, 255, 255);
+}
+.resume-download .button {
+    background-color: #fff;
+    border: none;
+    color: #444;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+ 
+}
+.resume-download .button i {
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+ 
+.resume-download .button:hover {
+    background-color: RoyalBlue;
+}
+
+
+/*homeEnd*/
+
+/*Education*/
+
+
+.education-section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+    background-image: url(images/educbg.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion .accordion-button{
+    background-color: lightblue;
+    color: black ;
+}
+
+.accordion .accordion-body{
+    background-color: white;
+}
+
+/*EducationEnd*/
+
+/*Experience*/
+
+.experience-container .row {
+    width: 100%;
+    padding: 30px;
+    
+}
+.work:hover > div {
+    transition-duration: 0.5s;
+}
+.work:hover > div:hover h3 i {
+    transform: scale(1.25);
+}
+.work:hover > div:not(:hover) {
+    opacity: 0.5;
+}
+.work h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+}
+.work h3 i {
+    color: blue;
+    background: white;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+    
+}
+.experience-container .row{/*box*/
+    float: left;
+    
+
+}
+.work small{
+    display: block;
+    opacity: 0.7;
+
+}
+.work ul li{
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+.work ul li:hover::before{
+    animation: circle 1.2s infinite;
+}
+.work ul li:hover span {
+    color: darkgreen;
+    animation: forwards;
+}
+@keyframes circle{
+    from {
+      box-shadow: 0 0 0 0px blueviolet
+    }
+    to {
+      box-shadow: 0 0 0 6px green;
+    }
+}
+.work ul li:first-of-type::before{
+    width: 10px;
+    height: 10px;
+    left: 1px;
+}
+.work ul li:last-of-type{
+    padding-bottom: 3px;
+}
+.work ul li:last-of-type::after{
+    border-radius: 1.5px;
+}
+.work ul li::before,
+.work ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.work ul li::before{
+    width: 7px;
+    height: 7px;
+    border: 3px solid purple;
+    background: orange;
+    border-radius: 50%;
+    left: 3px;
+    z-index: 1;
+}
+.work ul li::after{
+    width: 3px;
+    height: 100%;
+    background: white;
+    left: 5px;
+    top: 0;
+}
+.work ul li span{
+    transition-duration: 0.3s;
+}
+.work {
+    
+    width: 100%;
+    padding: 15px;
+    margin: 0 4% 15px 0;
+}
+
+
+
+/*ExperienceEnd*/
+
+/*Skills*/
+
+
+/*
+.skill{
+    background-color:grey;
+    width: 100%;
+    padding: 15px;
+    
+    
+
+}*/
+
+
+.skill:hover > div {
+    transition-duration: 0.5s;
+}
+.skill:hover > div:hover h3 i {
+    transform: scale(1.25);
+}
+.skill:hover > div:not(:hover) {
+    opacity: 0.5;
+}
+.skill h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+}
+.skill h3 i {
+    color: blue;
+    background: white;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+}
+.experience-container{
+	width: 100%;
+	min-height: 100vh;
+	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*SkillsEnd*/
+
+
+/*Live Background*/
+
+.experience-container .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    
+}
+  
+.experience-container .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+  
+.experience-container .bg3 {
+    animation-duration:5s;
+}
+  
+
+  
+  
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+}
+
+
+
