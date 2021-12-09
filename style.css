@@ -2,9 +2,11 @@
 
 body{
     font-family:  'Open sans', sans-serif;
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
+    /*overflow-x: hidden;*/
+    
 }
 
 
@@ -106,6 +108,10 @@ body{
  
 .resume-download .button:hover {
     background-color: RoyalBlue;
+}
+
+.texts:hover{
+    color: blue;
 }
 
 
@@ -287,10 +293,11 @@ body{
     margin-right: 8px;
     transition-duration: 0.3s;
 }
+
 .experience-container{
 	width: 100%;
 	min-height: 100vh;
-	
+	background-color: burlywood;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,7 +308,7 @@ body{
 
 
 /*Live Background*/
-
+/*
 .experience-container .bg {
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
@@ -312,7 +319,7 @@ body{
     right:-50%;
     top:0;
     z-index:-1;
-    
+
 }
   
 .experience-container .bg2 {
@@ -324,9 +331,6 @@ body{
     animation-duration:5s;
 }
   
-
-  
-  
 @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -334,7 +338,32 @@ body{
     100% {
       transform:translateX(25%);
     }
+}*/
+
+/*Expereince-SectionEnds*/
+
+
+/*projects*/
+.projects-section{
+    background-color: grey;
+}
+
+/*projectsEnd*/
+
+
+
+/*interests*/
+.card .card-body li{
+    font-weight: bold;
+}
+.interests-section{
+    background-color:orange;
+    background-size: cover;
+    
+    width: 100%;
+	min-height: 100vh;
+    
 }
 
 
-
+/*interestsEnd*/
