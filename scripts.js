@@ -10,5 +10,8 @@ $(document).ready(function(){
                             
                     });
                 });
-
+function formResponse() {
+        alert("Thank you, Your message is sent. I will get back to you as soon as possible.");
+}
+                
                 

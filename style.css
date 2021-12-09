@@ -5,7 +5,7 @@ body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     
 }
 
@@ -15,10 +15,12 @@ body{
 	width: 100%;
 	min-height: 100vh;
 	background-color: #ddd;
-    /*background-image: url(images/home.jpg);*/
+    /*background-image: url(images/bricks-wall-white-brick-wall-white.jpg);*/
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+
 }
 .home-container{
 	width: 80%;
@@ -98,6 +100,10 @@ body{
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: lighter;
+    display:flex;
+    align-items: center;
+    justify-content: center;
  
 }
 .resume-download .button i {
@@ -359,7 +365,7 @@ body{
 .interests-section{
     background-color:orange;
     background-size: cover;
-    
+    display: flexbox;
     width: 100%;
 	min-height: 100vh;
     
@@ -367,3 +373,70 @@ body{
 
 
 /*interestsEnd*/
+
+/*Contact*/
+
+.contact-section{
+    width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.info li,h3{
+    color: #fff;
+}
+.contact  h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact .bg-custom {
+    background-color: #130f40;
+}
+.btn-custom {
+    background-color: #130f40;
+    color: #fff;
+}
+.contact .btn-custom:hover {
+    background-color: #241f61;
+    color: #fff;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+.social-icons .fa{
+    font-size: 50px;
+    padding-bottom:20px;
+    cursor: pointer;
+}
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+.fa-linkedin{
+    color: #0e76a8;
+}
+
+.info li{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+    
+
+
+/*ContactEnd*/
