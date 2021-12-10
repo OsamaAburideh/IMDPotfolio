@@ -1,9 +1,8 @@
 $(document).ready(function(){
     var typed = new Typed(".typing", {
-                            strings: ["Software Developer", "Developer", "Blogger", "Designer", "Freelancer"],
-                        
-                            typeSpeed: 10,
-                            backSpeed: 10,
+                            strings: ["Student", "Software Developer", "Web Developer", "System Analyst", "Cloud Engineer", "Project Manager"],
+                            typeSpeed: 100,
+                            backSpeed: 100,
                             loop: true
                             
                         
@@ -11,7 +10,6 @@ $(document).ready(function(){
                     });
                 });
 function formResponse() {
-        alert("Thank you, Your message is sent. I will get back to you as soon as possible.");
+                        alert("Thank you, Your message is sent. I will get back to you as soon as possible.");
 }
-                
-                
+
