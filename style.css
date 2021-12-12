@@ -419,12 +419,14 @@ body{
 .contact-section{
     width: 100%;
 	min-height: 100vh;
-	background-color: #ddd;
+    background-image: url(images/bricks-wall-white-brick-wall-white.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
     
 }
+
 
 .contact .row{
     
